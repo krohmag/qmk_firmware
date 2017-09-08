@@ -168,7 +168,7 @@ bool glissando = true;
 #ifndef AUDIO_OFF_SONG
     #define AUDIO_OFF_SONG SONG(AUDIO_OFF_SOUND)
 #endif
-float startup_song[][2] = ZELDA_PUZZLE;
+float startup_song[][2] = STARTUP_SONG;
 float audio_on_song[][2] = AUDIO_ON_SONG;
 float audio_off_song[][2] = AUDIO_OFF_SONG;
 
