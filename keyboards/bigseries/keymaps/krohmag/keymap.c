@@ -37,8 +37,7 @@ void matrix_init_user(void) {
       dprintf("Initializing in matrix_scan_user");
       rgblight_enable();
       rgblight_mode(1);
-      rgblight_sethsv(17,255,255);
-      rgblight_setrgb(0xFF, 0x80, 0x00);
+      rgblight_sethsv(25,255,255);
       initialized = 1;
     }
 }
