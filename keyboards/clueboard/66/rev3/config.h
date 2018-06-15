@@ -70,3 +70,8 @@
 #define RGBLIGHT_EFFECT_KNIGHT_OFFSET 2   // The led to start at
 #define RGBLIGHT_EFFECT_KNIGHT_LED_NUM 5  // How many LEDs to travel
 #define RGBLIGHT_EFFECT_SNAKE_LENGTH 4    // How many LEDs wide to light up
+#define RGBLIGHT_SLEEP
+
+#define GRAVE_ESC_ALT_OVERRIDE
+
+#endif
