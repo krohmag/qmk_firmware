@@ -47,13 +47,16 @@ void led_init_ports() {
     DDRB |= (1<<4);
 }
 
-void led_set_kb(uint8_t usb_led) {
-    DDRB |= (1<<4);
-    if (usb_led & (1<<USB_LED_CAPS_LOCK)) {
-        // Turn capslock on
-        PORTB |= (1<<4);
+void led_set_user(uint8_t usb_led) {
+    DDRB |= (1 << 4);
+    if (usb_led & (1 << USB_LED_CAPS_LOCK)) {
+        PORTB &= ~(1 << 4);
+        rgblight_sethsv(0, 0, 255);
     } else {
-        // Turn capslock off
-        PORTB &= ~(1<<4);
+        PORTB &= ~(1 << 4);
+        rgblight_sethsv(20, 255, 255); //carbon - orange
+        //rgblight_sethsv(10, 255, 255); // Yuri - red-orange
+        //rgblight_sethsv(240, 255, 255); //nautilus - blue
+        //rgblight_sethsv(311,255,255); //miami - pink
     }
 }
