@@ -54,9 +54,9 @@ void led_set_user(uint8_t usb_led) {
         rgblight_sethsv(0, 0, 255);
     } else {
         PORTB &= ~(1 << 4);
-        rgblight_sethsv(20, 255, 255); //carbon - orange
+        //rgblight_sethsv(20, 255, 255); //carbon - orange
         //rgblight_sethsv(10, 255, 255); // Yuri - red-orange
-        //rgblight_sethsv(240, 255, 255); //nautilus - blue
+        rgblight_sethsv(240, 255, 255); //nautilus - blue
         //rgblight_sethsv(311,255,255); //miami - pink
     }
 }
