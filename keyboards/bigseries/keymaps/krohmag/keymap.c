@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-KEYMAP(
+LAYOUT(
     KC_A),
 
 
@@ -37,7 +37,7 @@ void matrix_init_user(void) {
       dprintf("Initializing in matrix_scan_user");
       rgblight_enable();
       rgblight_mode(1);
-      rgblight_sethsv(25,255,255);
+      rgblight_sethsv(180, 255, 153);
       initialized = 1;
     }
 }
